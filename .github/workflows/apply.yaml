@@ -56,7 +56,7 @@ jobs:
 
           # Traversing directory array
 
-          i = 0
+          i=0
           while [ i -le $ength ]
           do
             terraform plan
