@@ -53,6 +53,11 @@ jobs:
           # echo "Array : ${dir[@]}"
           length=${#dir[@]}
           echo $length
+
+      - name: Run Command
+        run: |
+          echo "Array : ${dir[@]}"
+          echo $length
       
 
 
