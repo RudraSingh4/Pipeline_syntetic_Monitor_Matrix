@@ -50,14 +50,13 @@ jobs:
         run: |
           # Defining directory array
           dir=("Test-monitor", "Test2-Monitor")
-          i=0
           # echo "Array : ${dir[@]}"
           length=${#dir[@]}
           # echo $length
 
           # Traversing directory array
 
-          while [ i -le $ength ]
+          while [ -z i -le $ength ]
           do
             terraform plan
             terraform apply -auto-approve
