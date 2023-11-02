@@ -56,7 +56,7 @@ jobs:
 
           # Traversing directory array
 
-          while [ -z i -le $ength ]
+          while [ $i -le $ength ]
           do
             terraform plan
             terraform apply -auto-approve
