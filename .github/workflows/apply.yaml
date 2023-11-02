@@ -46,11 +46,11 @@ jobs:
       #     terraform apply -auto-approve
       #   working-directory: ${{ matrix.dir }}
 
-      name: set up the array variable
-      run: |
-        # Defining directory array
-        dir=("Test-monitor", "Test2-Monitor")
-        echo "Array : ${dir[@]}"
+      - name: set up the array variable
+        run: |
+          # Defining directory array
+          dir=("Test-monitor", "Test2-Monitor")
+          echo "Array : ${dir[@]}"
       
 
 
