@@ -55,15 +55,16 @@ jobs:
           # echo $length
 
           # Traversing directory array
-          i= -0
-          while [ $i -le $ength ]
-          do
-            terraform plan
-            terraform apply -auto-approve
+          i=0
+          echo $i
+          # while [ $i -le $ength ]
+          # do
+          #   terraform plan
+          #   terraform apply -auto-approve
 
-            working-directory: ${dir[@]}
+          #   working-directory: ${dir[@]}
           
-          done
+          # done
 
 
 
