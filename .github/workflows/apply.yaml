@@ -54,10 +54,20 @@ jobs:
           length=${#dir[@]}
           echo $length
 
-      - name: Run Command
-        run: |
-          echo "Array : ${dir[@]}"
-          echo $length
+          # Traversing directory array
+
+          i = 0
+          while [ i -le $ength ]
+          do
+            terraform plan
+            terraform apply -auto-approve
+
+            working-directory: ${dir[@]}
+          
+          done
+
+
+
       
 
 
