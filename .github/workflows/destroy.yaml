@@ -39,6 +39,7 @@ jobs:
             aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
             aws-region: ${{ env.aws_region }}
       - name: Run Command
-        Terraform init
-        terraform destroy -auto-approve
+        run: |
+          terraform init
+          terraform destroy -auto-approve
         working-directory: ${{ matrix.dir }}

@@ -40,8 +40,9 @@ jobs:
             aws-region: ${{ env.aws_region }}
 
       - name: Run Command
-        Terraform init
-        terraform apply -auto-approve
+        run: |
+          terraform init
+          terraform apply -auto-approve
         working-directory: ${{ matrix.dir }}
       
 
